@@ -1,7 +1,14 @@
 import React from "react";
+import MobileNavbar from "./mobile";
+import DesktopNavbar from "./desktop";
 
 const Navbar = () => {
-  return <div>Navbar</div>;
+  return (
+    <>
+      <MobileNavbar />
+      <DesktopNavbar />
+    </>
+  );
 };
 
 export default Navbar;
