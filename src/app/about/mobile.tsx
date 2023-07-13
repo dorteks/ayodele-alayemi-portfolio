@@ -15,7 +15,7 @@ const Mobile = () => {
 
       <div className="flex flex-col gap-6 max-w-[680px]">
         <h1 className="text-[28px] sm:text-[36px] md:text-[48px] md:leading-[56px] font-semibold text-[#27272A]   ">
-          I'm Ayodele Alayemi. I write scalable, reusable and comprehensive
+          I’m Ayodele Alayemi. I write scalable, reusable and comprehensive
           code.
         </h1>
         <div className="flex flex-col gap-6 text-base text-[#52525B] ">
@@ -50,7 +50,7 @@ const Mobile = () => {
             skills, experience, and dedication to continuous learning make me a
             valuable asset to any frontend development team. I actively
             contribute my expertise to create outstanding user experiences for
-            any company's products or services.
+            any company’s products or services.
           </p>
         </div>
       </div>

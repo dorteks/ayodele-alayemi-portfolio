@@ -7,7 +7,7 @@ const Desktop = () => {
     <main className="hidden lg:flex ">
       <div className="w-1/2 flex flex-col gap-6 ">
         <h1 className="text-[40px] leading-[48px] font-semibold text-[#27272A]   ">
-          I'm Ayodele Alayemi. I write scalable, reusable and comprehensive
+          I’m Ayodele Alayemi. I write scalable, reusable and comprehensive
           code.
         </h1>
         <div className="flex flex-col gap-6 text-base text-[#52525B] ">
@@ -42,7 +42,7 @@ const Desktop = () => {
             skills, experience, and dedication to continuous learning make me a
             valuable asset to any frontend development team. I actively
             contribute my expertise to create outstanding user experiences for
-            any company's products or services.
+            any company’s products or services.
           </p>
         </div>
       </div>
