@@ -1,7 +1,127 @@
-import React from "react";
+"use client";
+
+import Image from "next/image";
+import React, { useState } from "react";
 
 const MobileNavbar = () => {
-  return <div>MobileNavbar</div>;
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggleOpen = () => {
+    setIsOpen(!isOpen);
+  };
+
+  const [hasNavigated, setHasNavigated] = useState(false);
+  const [ONIsNavigated, setONIsNavigated] = useState(true);
+  const [OFFIsNavigated, setOFFIsNavigated] = useState(false);
+
+  const handleONNavigation = (e: any) => {
+    e.preventDefault();
+    setHasNavigated(true);
+    setONIsNavigated(!ONIsNavigated);
+    setOFFIsNavigated(!OFFIsNavigated);
+  };
+
+  const handleOFFNavigation = (e: any) => {
+    e.preventDefault();
+    setHasNavigated(true);
+    setONIsNavigated(!ONIsNavigated);
+    setOFFIsNavigated(!OFFIsNavigated);
+  };
+
+  return (
+    <div className="relative z-20 bg-[#FFFFFFE6] tap-transparent py-7 flex md:hidden items-center justify-between">
+      <div className="bg-red-500 ml-3 ">
+        <Image src="" alt="avatar" width={36} height={35} />
+      </div>
+
+      <div className="flex gap-7 sm:gap-12 mx-[10px]">
+        {/* hamburger menu for mobile */}
+        <div>
+          <Image
+            width={33}
+            height={33}
+            alt="togge menu"
+            onClick={toggleOpen}
+            className="bg-red-500"
+            src="/assets/hamburger.png"
+          />
+
+          {isOpen && (
+            <div className="absolute z-40 left-0 top-16 h-[60vh] w-full p-8 rounded bg-[#FFFFFF]">
+              <div className="flex flex-col items-center gap-10 ">
+                <Image
+                  alt=""
+                  width={25}
+                  height={25}
+                  onClick={toggleOpen}
+                  src="/assets/close.svg"
+                  className="mt-8 flex self-end mr-6 sm:mr-[55px] md:mr-[65px] "
+                />
+                <div className="flex flex-col gap-5 text-center text-sm font-semibold text-[#27272A]">
+                  {[
+                    { id: 1, text: "About" },
+                    { id: 2, text: "Articles" },
+                    { id: 3, text: "Projects" },
+                    { id: 4, text: "Speaking" },
+                    { id: 5, text: "Uses" },
+                  ].map((i) => (
+                    <p
+                      key={i.id}
+                      className="px-16 py-4 bg-[inherit] hover:border-[0.5px] hover:border-[#e5ede7] hover:rounded-md text-[#27272A] hover:text-[#14b8a6] "
+                    >
+                      {i.text}
+                    </p>
+                  ))}
+                </div>
+              </div>
+            </div>
+          )}
+        </div>
+        {/* hamburger logic ends here */}
+        <button
+          className={`${
+            ONIsNavigated
+              ? "relative bg-[#717171] rounded-full w-[56px] h-9 border-[2px] flex items-center justify-center"
+              : "relative bg-black rounded-full w-[56px] h-9 border-[2px] flex items-center justify-center "
+          }`}
+        >
+          <div
+            onClick={handleONNavigation}
+            className={`${
+              ONIsNavigated
+                ? "w-[15px] ml-[3px] bg-white text-white rounded-full px-[13px] py-[2px] absolute left-0 z-20"
+                : "w-[15px] ml-[3px] bg-[#222222]  text-[#222222] rounded-full px-[13px] py-[2px] absolute left-0"
+            }`}
+          >
+            X
+          </div>
+          <div
+            onClick={handleOFFNavigation}
+            className={`${
+              ONIsNavigated
+                ? "w-[15px] mr-[3px] bg-[#717171]  text-[#717171] rounded-full px-[13px] py-[2px] absolute right-0 "
+                : "w-[15px] mr-[3px] bg-white text-[#717171] rounded-full px-[14px] absolute right-0 z-20"
+            }`}
+          >
+            <div className="relative -left-4 px-[10px] py-[8px] ">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 32 32"
+                aria-hidden="true"
+                role="presentation"
+                focusable="false"
+                className={`${
+                  ONIsNavigated ? "stroke-red" : "stroke-black"
+                } block fill-none h-3 w-3  stroke-[5px] overflow-visible  `}
+              >
+                <path fill="none" d="m4 16.5 8 8 16-16"></path>
+              </svg>
+            </div>
+          </div>
+        </button>
+      </div>
+    </div>
+  );
 };
 
 export default MobileNavbar;
