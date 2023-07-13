@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import Link from "next/link";
 import React, { useState } from "react";
 
 const MobileNavbar = () => {
@@ -30,9 +31,9 @@ const MobileNavbar = () => {
 
   return (
     <div className="relative z-20 bg-[#FFFFFFE6] tap-transparent py-7 flex md:hidden items-center justify-between">
-      <div className="bg-red-500 ml-3 ">
+      <Link href="/" className="bg-red-500 ml-3 ">
         <Image src="" alt="avatar" width={36} height={35} />
-      </div>
+      </Link>
 
       <div className="flex gap-7 sm:gap-12 mx-[10px]">
         {/* hamburger menu for mobile */}
@@ -47,7 +48,10 @@ const MobileNavbar = () => {
           />
 
           {isOpen && (
-            <div className="absolute z-40 left-0 top-16 h-[60vh] w-full p-8 rounded bg-[#FFFFFF]">
+            <div
+              onClick={toggleOpen}
+              className="absolute z-40 left-0 top-16 h-[90vh] w-full p-8 rounded bg-[#FFFFFF]"
+            >
               <div className="flex flex-col items-center gap-10 ">
                 <Image
                   alt=""
@@ -59,18 +63,19 @@ const MobileNavbar = () => {
                 />
                 <div className="flex flex-col gap-5 text-center text-sm font-semibold text-[#27272A]">
                   {[
-                    { id: 1, text: "About" },
-                    { id: 2, text: "Articles" },
-                    { id: 3, text: "Projects" },
-                    { id: 4, text: "Speaking" },
-                    { id: 5, text: "Uses" },
+                    { id: 1, link: "/about", text: "About" },
+                    { id: 2, link: "", text: "Articles" },
+                    { id: 3, link: "", text: "Projects" },
+                    { id: 4, link: "", text: "Speaking" },
+                    { id: 5, link: "", text: "Uses" },
                   ].map((i) => (
-                    <p
+                    <Link
                       key={i.id}
+                      href={i.link}
                       className="px-16 py-4 bg-[inherit] hover:border-[0.5px] hover:border-[#e5ede7] hover:rounded-md text-[#27272A] hover:text-[#14b8a6] "
                     >
                       {i.text}
-                    </p>
+                    </Link>
                   ))}
                 </div>
               </div>

@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import Image from "next/image";
 import React, { useState } from "react";
 
@@ -25,24 +26,25 @@ const DesktopNavbar = () => {
   return (
     <div className="relative z-20 bg-[#FFFFFF]">
       <div className="hidden md:flex flex-row justify-between pt-8 pb-6 px-12">
-        <div className="bg-blue-500">
+        <Link href="/" className="bg-blue-500">
           <Image src="" alt="avatar" width={36} height={35} />
-        </div>
+        </Link>
 
         <div className="px-3 flex text-sm font-semibold rounded-full border-[1px] border-[#e5e7eb] shadow-md shadow-[#0000000d] hover:shadow-[#00000014]">
           {[
-            { id: 1, text: "About" },
-            { id: 2, text: "Articles" },
-            { id: 3, text: "Projects" },
-            { id: 4, text: "Speaking" },
-            { id: 5, text: "Uses" },
+            { id: 1, link: "/about", text: "About" },
+            { id: 2, link: "", text: "Articles" },
+            { id: 3, link: "", text: "Projects" },
+            { id: 4, link: "", text: "Speaking" },
+            { id: 5, link: "", text: "Uses" },
           ].map((i) => (
-            <p
+            <Link
               key={i.id}
+              href={i.link}
               className="px-3 py-2 text-[#27272A] hover:text-[#14b8a6]"
             >
               {i.text}
-            </p>
+            </Link>
           ))}
         </div>
 

@@ -88,7 +88,7 @@ const ArticleAndExperience = () => {
                   className="stroke-zinc-400 dark:stroke-zinc-500"
                 ></path>
               </svg>
-            </span>{" "}
+            </span>
             Stay up to date
           </p>
           <p className="mt-2 mb-7 text-sm text-zinc-600">
@@ -127,7 +127,7 @@ const ArticleAndExperience = () => {
                   className="stroke-zinc-400 dark:stroke-zinc-500"
                 ></path>
               </svg>
-            </span>{" "}
+            </span>
             Work
           </p>
 
@@ -185,7 +185,7 @@ const ArticleAndExperience = () => {
                   <p className="flex self-start">{i.position}</p>
                   <p className="flex self-end">
                     {i.startYear} -{" "}
-                    <span className="pl-[3px]">{i.endYear}</span>{" "}
+                    <span className="pl-[3px]">{i.endYear}</span>
                   </p>
                 </div>
               </div>
