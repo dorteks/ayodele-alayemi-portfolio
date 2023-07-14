@@ -26,17 +26,23 @@ const DesktopNavbar = () => {
   return (
     <div className="relative z-20 bg-[#FFFFFF]">
       <div className="hidden md:flex flex-row justify-between pt-8 pb-6 px-12">
-        <Link href="/" className="bg-blue-500">
-          <Image src="" alt="avatar" width={36} height={35} />
+        <Link href="/">
+          <Image
+            src="/assets/profile.jpeg"
+            alt="avatar"
+            width={36}
+            height={35}
+            className="rounded-full h-[50px] w-[50px] "
+          />
         </Link>
 
-        <div className="px-3 flex text-sm font-semibold rounded-full border-[1px] border-[#e5e7eb] shadow-md shadow-[#0000000d] hover:shadow-[#00000014]">
+        <div className="px-3 flex items-center text-sm font-semibold rounded-full border-[1px] border-[#e5e7eb] shadow-md shadow-[#0000000d] hover:shadow-[#00000014]">
           {[
             { id: 1, link: "/about", text: "About" },
-            { id: 2, link: "", text: "Articles" },
-            { id: 3, link: "", text: "Projects" },
-            { id: 4, link: "", text: "Speaking" },
-            { id: 5, link: "", text: "Uses" },
+            { id: 2, link: "/articles", text: "Articles" },
+            { id: 3, link: "/projects", text: "Projects" },
+            { id: 4, link: "/speakings", text: "Speaking" },
+            { id: 5, link: "/uses", text: "Uses" },
           ].map((i) => (
             <Link
               key={i.id}

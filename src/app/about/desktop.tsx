@@ -4,11 +4,12 @@ import Image from "next/image";
 
 const Desktop = () => {
   return (
-    <main className="hidden lg:flex ">
+    <main className="hidden lg:flex tap-transparent">
       <div className="w-1/2 flex flex-col gap-6 ">
         <h1 className="text-[40px] leading-[48px] font-semibold text-[#27272A]   ">
-          I’m Ayodele Alayemi. I write scalable, reusable and comprehensive
-          code.
+          I’m Ayodele Alayemi, a highly skilled and motivated frontend
+          developer. I design and implement user interfaces for web
+          applications.
         </h1>
         <div className="flex flex-col gap-6 text-base text-[#52525B] ">
           <p>
@@ -24,9 +25,9 @@ const Desktop = () => {
             I am also highly creative and detail-oriented. I have a keen eye for
             aesthetics and a deep understanding of UX principles, allowing me to
             create visually appealing designs that are intuitive and easy to
-            use. I am able to collaborate effectively with designers, product
-            managers, and backend developers to bring concepts to life and
-            deliver high-quality frontend solutions.
+            use. I have strong understanding of modern web development
+            principles, including mobile-first design, cross-browser
+            compatibility, and accessibility.
           </p>
           <p>
             I am constantly eager to learn and stay up-to-date with the latest
@@ -36,23 +37,26 @@ const Desktop = () => {
             manage my time effectively to meet project deadlines.
           </p>
           <p>
-            I am a strong communicator and a team player. I believe in open and
-            transparent communication, and I am always willing to collaborate
-            and contribute to the success of the team. I am confident that my
-            skills, experience, and dedication to continuous learning make me a
-            valuable asset to any frontend development team. I actively
-            contribute my expertise to create outstanding user experiences for
-            any company’s products or services.
+            I am a strong communicator and a team player. I am able to
+            collaborate effectively with designers, product managers, and
+            backend developers to bring concepts to life and deliver
+            high-quality frontend solutions. I believe in open and transparent
+            communication, and I am always willing to collaborate and contribute
+            to the success of the team. I am confident that my skills,
+            experience, and dedication to continuous learning make me a valuable
+            asset to any frontend development team. I actively contribute my
+            expertise to create outstanding user experiences for any company’s
+            products or services.
           </p>
         </div>
       </div>
       <div className="w-1/2 pl-[64px] xl:pl-[96px] ">
         <div>
           <Image
-            src=""
-            alt=""
             width={350}
             height={350}
+            alt="profile"
+            src="/assets/profile.jpeg"
             className="bg-green-500 rotate-2 rounded-xl"
           />
         </div>

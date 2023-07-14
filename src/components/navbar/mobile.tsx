@@ -30,9 +30,15 @@ const MobileNavbar = () => {
   };
 
   return (
-    <div className="relative z-20 bg-[#FFFFFFE6] tap-transparent py-7 flex md:hidden items-center justify-between">
-      <Link href="/" className="bg-red-500 ml-3 ">
-        <Image src="" alt="avatar" width={36} height={35} />
+    <div className="relative z-20 bg-[#FFFFFFE6] tap-transparent py-7 flex md:hidden items-center justify-between tap-transparent">
+      <Link href="/" className="ml-4">
+        <Image
+          width={36}
+          height={35}
+          alt="avatar"
+          src="/assets/profile.jpeg"
+          className="rounded-full h-[50px] w-[50px] "
+        />
       </Link>
 
       <div className="flex gap-7 sm:gap-12 mx-[10px]">
@@ -50,7 +56,7 @@ const MobileNavbar = () => {
           {isOpen && (
             <div
               onClick={toggleOpen}
-              className="absolute z-40 left-0 top-16 h-[90vh] w-full p-8 rounded bg-[#FFFFFF]"
+              className="absolute z-40 left-0 top-20 h-[90vh] w-full p-8 rounded bg-[#FFFFFF]"
             >
               <div className="flex flex-col items-center gap-10 ">
                 <Image
@@ -64,10 +70,10 @@ const MobileNavbar = () => {
                 <div className="flex flex-col gap-5 text-center text-sm font-semibold text-[#27272A]">
                   {[
                     { id: 1, link: "/about", text: "About" },
-                    { id: 2, link: "", text: "Articles" },
-                    { id: 3, link: "", text: "Projects" },
-                    { id: 4, link: "", text: "Speaking" },
-                    { id: 5, link: "", text: "Uses" },
+                    { id: 2, link: "/articles", text: "Articles" },
+                    { id: 3, link: "/projects", text: "Projects" },
+                    { id: 4, link: "/speaking", text: "Speaking" },
+                    { id: 5, link: "/uses", text: "Uses" },
                   ].map((i) => (
                     <Link
                       key={i.id}

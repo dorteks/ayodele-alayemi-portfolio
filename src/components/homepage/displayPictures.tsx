@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const DisplayPictures = () => {
   return (
-    <div className="h-[350px] w-full py-4 my-10  ">
+    <div className="h-[350px] w-full py-4 my-10 tap-transparent">
       <div className=" relative flex flex-row items-center justify-center  gap-8">
         {/* <Image
           src=""
