@@ -4,7 +4,7 @@ import Navbar from "@/components/navbar";
 import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
-  title: "Ayodele Alayemi - Portfolio",
+  title: "Portfolio - Ayodele Alayemi ",
   description: "Created wth NextJs 13",
 };
 

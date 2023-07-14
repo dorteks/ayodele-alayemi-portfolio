@@ -4,7 +4,7 @@ import Image from "next/image";
 
 const Introduction = () => {
   return (
-    <div className="flex flex-col gap-6 max-w-[680px]">
+    <div className="flex flex-col gap-6 max-w-[680px] tap-transparent">
       <h1 className="text-3xl sm:text-[38px] md:text-[46px] lg:text-5xl font-semibold text-[#27272A] sm:leading-[40px] md:leading-[50px] lg:leading-[3.5rem] ">
         Sofware designer, lover of music, and violinist.
       </h1>

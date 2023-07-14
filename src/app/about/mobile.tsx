@@ -4,13 +4,13 @@ import Image from "next/image";
 
 const Mobile = () => {
   return (
-    <main className="flex flex-col lg:hidden px-3 sm:px-3 ">
+    <main className="flex flex-col lg:hidden px-3 sm:px-3 tap-transparent">
       <Image
-        src=""
-        alt=""
         width={350}
         height={350}
-        className="bg-green-500 rotate-2 rounded-xl mb-16  "
+        alt="profile"
+        src="/assets/profile.jpeg"
+        className="rotate-2 rounded-xl mb-16  "
       />
 
       <div className="flex flex-col gap-6 max-w-[680px]">

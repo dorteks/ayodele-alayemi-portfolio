@@ -4,7 +4,7 @@ import Image from "next/image";
 
 const Desktop = () => {
   return (
-    <main className="hidden lg:flex ">
+    <main className="hidden lg:flex tap-transparent">
       <div className="w-1/2 flex flex-col gap-6 ">
         <h1 className="text-[40px] leading-[48px] font-semibold text-[#27272A]   ">
           I’m Ayodele Alayemi, a highly skilled and motivated frontend
@@ -53,10 +53,10 @@ const Desktop = () => {
       <div className="w-1/2 pl-[64px] xl:pl-[96px] ">
         <div>
           <Image
-            src=""
-            alt=""
             width={350}
             height={350}
+            alt="profile"
+            src="/assets/profile.jpeg"
             className="bg-green-500 rotate-2 rounded-xl"
           />
         </div>

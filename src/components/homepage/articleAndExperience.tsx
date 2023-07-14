@@ -3,7 +3,7 @@ import Link from "next/link";
 
 const ArticleAndExperience = () => {
   return (
-    <section className="flex flex-col lg:flex-row items-center justify-between">
+    <section className="flex flex-col lg:flex-row items-center justify-between tap-transparent">
       <div className="w-full lg:w-1/2 flex flex-col py-5 sm:py-6 lg:py-6 xl:py-0 gap-9 sm:gap-12 ">
         {[
           {

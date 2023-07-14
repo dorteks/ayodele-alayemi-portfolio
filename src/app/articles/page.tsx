@@ -1,9 +1,15 @@
 import React from "react";
 import Link from "next/link";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Articles - Ayodele Alayemi",
+  description: "My Articles",
+};
 
 const Article = () => {
   return (
-    <div className="px-2 sm:px-0 ">
+    <div className="px-2 sm:px-0 tap-transparent">
       <h1 className="text-3xl sm:text-4xl md:text-5xl text-[#27272A] font-semibold max-w-[670px]  ">
         Writing on software development, rudiments of music and renewable
         energy.

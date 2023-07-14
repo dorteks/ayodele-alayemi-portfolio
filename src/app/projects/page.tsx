@@ -1,9 +1,15 @@
-import Image from "next/image";
 import React from "react";
+import Image from "next/image";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Projects - Ayodele Alayemi",
+  description: "My Projects",
+};
 
 const Projects = () => {
   return (
-    <div className="px-3  sm:px-0">
+    <div className="px-3 sm:px-0 tap-transparent">
       <h1 className="text-3xl sm:text-4xl md:text-5xl text-[#27272A] font-semibold max-w-[670px]  ">
         Things I’ve made
       </h1>
@@ -18,6 +24,14 @@ const Projects = () => {
 
       <div className="grid sm:grid-cols-2 sm:grid-rows-3  lg:grid-cols-3 lg:grid-rows-3 gap-4 ">
         {[
+          {
+            id: 6,
+            rounded: "rounded-full",
+            logoSrc: "/assets/profile.jpeg",
+            projectTitle: "Ayodele Alayemi - Portfolio",
+            projectDescription: "Personal profile and portfolio",
+            projectLink: "https://ayodele-alayemi-portfolio.vercel.app/",
+          },
           {
             id: 1,
             logoSrc: "/assets/airbnb-logo.png",
@@ -57,14 +71,6 @@ const Projects = () => {
             projectLink:
               "https://ayodele-alayemi-post-election-data.vercel.app/",
           },
-          // {
-          //   id: 6,
-          //   logoSrc: "/assets/airbnb-logo.png",
-          //   projectTitle: " Airbnb Website Clone",
-          //   projectDescription:
-          //     " Airbnb is an online marketplace that connects people who want to rent out their property with people who are looking for accommodations in specific locales. Airbnb offers people an easy, relatively stress-free way to earn some income from their property.",
-          //   projectLink: "https://ayodele-alayemi-fintech-fe.vercel.app/",
-          // },
         ].map((i) => (
           <div
             key={i.id}
@@ -76,7 +82,7 @@ const Projects = () => {
                 alt="project logo"
                 width={48}
                 height={48}
-                className="w-[auto] h-[auto] "
+                className={`w-[auto] h-[auto] ${i.rounded}`}
               />
             </div>
             <div className="h-auto sm:h-[220px]">
