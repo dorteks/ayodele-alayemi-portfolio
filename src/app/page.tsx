@@ -5,11 +5,11 @@ import ArticleAndExperience from "@/components/homepage/articleAndExperience";
 
 const HomePage = () => {
   return (
-    <>
+    <div className="px-3 sm:px-0">
       <Introduction />
       <DisplayPictures />
       <ArticleAndExperience />
-    </>
+    </div>
   );
 };
 
