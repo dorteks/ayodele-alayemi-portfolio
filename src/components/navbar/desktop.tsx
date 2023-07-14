@@ -24,8 +24,8 @@ const DesktopNavbar = () => {
   };
 
   return (
-    <div className="relative z-20 bg-[#FFFFFF]">
-      <div className="hidden md:flex flex-row justify-between pt-8 pb-6 px-12">
+    <div className="relative z-20 bg-[#FFFFFF] tap-transparent">
+      <div className="hidden md:flex flex-row items-center justify-between pt-8 pb-6 px-12">
         <Link href="/">
           <Image
             src="/assets/profile.jpeg"
@@ -36,7 +36,7 @@ const DesktopNavbar = () => {
           />
         </Link>
 
-        <div className="px-3 flex items-center text-sm font-semibold rounded-full border-[1px] border-[#e5e7eb] shadow-md shadow-[#0000000d] hover:shadow-[#00000014]">
+        <div className="px-3 py-[3px] flex items-center text-sm font-semibold rounded-full border-[1px] border-[#e5e7eb] shadow-md shadow-[#0000000d] hover:shadow-[#00000014]">
           {[
             { id: 1, link: "/about", text: "About" },
             { id: 2, link: "/articles", text: "Articles" },

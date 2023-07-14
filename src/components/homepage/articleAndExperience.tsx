@@ -150,6 +150,15 @@ const ArticleAndExperience = () => {
             },
             {
               id: 3,
+              rounded: "rounded-full",
+              organisationLogo: "/assets/profile.jpeg",
+              organisation: "Contract Front-end Developer",
+              position: "Front-end Developer",
+              startYear: "2022",
+              endYear: "Present",
+            },
+            {
+              id: 4,
               organisationLogo: "/assets/solar-shop-logo.jpeg",
               organisation: "The Solar Shop Limited",
               position: "Admin Operation",
@@ -173,7 +182,7 @@ const ArticleAndExperience = () => {
                 <img
                   src={i.organisationLogo}
                   alt="logo"
-                  className="w-[35px] h-[35px] "
+                  className={`w-[35px] h-[35px] ${i.rounded}`}
                 />
               </div>
 

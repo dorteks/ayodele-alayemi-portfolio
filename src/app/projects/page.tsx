@@ -25,7 +25,7 @@ const Projects = () => {
       <div className="grid sm:grid-cols-2 sm:grid-rows-3  lg:grid-cols-3 lg:grid-rows-3 gap-4 ">
         {[
           {
-            id: 6,
+            id: 1,
             rounded: "rounded-full",
             logoSrc: "/assets/profile.jpeg",
             projectTitle: "Ayodele Alayemi - Portfolio",
@@ -33,15 +33,15 @@ const Projects = () => {
             projectLink: "https://ayodele-alayemi-portfolio.vercel.app/",
           },
           {
-            id: 1,
+            id: 2,
             logoSrc: "/assets/airbnb-logo.png",
             projectTitle: " Airbnb Website Clone",
             projectDescription:
               " Airbnb is an online marketplace that connects people who want to rent out their property with people who are looking for accommodations in specific locales. Airbnb offers people an easy, relatively stress-free way to earn some income from their property.",
-            projectLink: "https://ayodele-alayemi-fintech-fe.vercel.app/",
+            projectLink: "https://ayodele-alayemi-airbnb-clone.vercel.app/",
           },
           {
-            id: 2,
+            id: 3,
             logoSrc: "/assets/lendsqr-logo.svg",
             projectTitle: " Lendsqr Fintech Web App",
             projectDescription:
@@ -49,21 +49,21 @@ const Projects = () => {
             projectLink: "https://ayodele-alayemi-fintech-fe.vercel.app/",
           },
           {
-            id: 3,
+            id: 4,
             logoSrc: "/assets/bals-logo.svg",
             projectTitle: "BALS University",
             projectDescription: "E-Commerce website.",
             projectLink: "https://bals-university.vercel.app/",
           },
           {
-            id: 4,
+            id: 5,
             logoSrc: "/assets/bds-logo.svg",
             projectTitle: "Boundless Digital Service",
             projectDescription: "SAAS Website",
             projectLink: "https://boundless-digital-services.vercel.app/",
           },
           {
-            id: 5,
+            id: 6,
             logoSrc: "/assets/hernalytics-logo.svg",
             projectTitle: "Nigeria Election Result (Sample)",
             projectDescription:
@@ -94,6 +94,7 @@ const Projects = () => {
 
             <a
               href={i.projectLink}
+              target="_blank"
               className="w-[70px] py-1 mt-2 italic hover:text-teal-500 "
             >
               Visit site

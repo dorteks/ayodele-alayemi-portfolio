@@ -13,26 +13,26 @@ const DisplayPictures = () => {
           className="h-[330px] w-[300px] rounded-2xl bg-green-500 rotate-3"
         /> */}
         <Image
-          src=""
+          src="/assets/frontend.jpg"
           width={300}
           height={330}
           alt="picture display"
           className="h-[330px] w-[300px] rounded-2xl bg-green-500 -rotate-3 "
         />
-        <Image
+        {/* <Image
           src=""
           width={300}
           height={330}
           alt="picture display"
           className="h-[330px] w-[300px] rounded-2xl bg-green-500 rotate-2"
-        />
-        <Image
+        /> */}
+        {/* <Image
           src=""
           width={300}
           height={330}
           alt="picture display"
           className="h-[330px] w-[300px] rounded-2xl bg-green-500 rotate-3"
-        />
+        /> */}
         {/* <Image
           src=""
           width={300}

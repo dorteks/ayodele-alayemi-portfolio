@@ -30,7 +30,7 @@ const MobileNavbar = () => {
   };
 
   return (
-    <div className="relative z-20 bg-[#FFFFFFE6] tap-transparent py-7 flex md:hidden items-center justify-between tap-transparent">
+    <div className="h-[60px] pt-10 relative z-20 bg-[#FFFFFFE6] tap-transparent py-7 flex md:hidden items-center justify-between tap-transparent">
       <Link href="/" className="ml-4">
         <Image
           width={36}
@@ -41,22 +41,21 @@ const MobileNavbar = () => {
         />
       </Link>
 
-      <div className="flex gap-7 sm:gap-12 mx-[10px]">
+      <div className="flex gap-7 items-center sm:gap-12 mx-[10px]">
         {/* hamburger menu for mobile */}
         <div>
           <Image
-            width={33}
-            height={33}
+            width={28}
+            height={28}
             alt="togge menu"
             onClick={toggleOpen}
-            className="bg-red-500"
             src="/assets/hamburger.png"
           />
 
           {isOpen && (
             <div
               onClick={toggleOpen}
-              className="absolute z-40 left-0 top-20 h-[90vh] w-full p-8 rounded bg-[#FFFFFF]"
+              className="absolute z-40 left-0 top-0 h-[90vh] w-full p-8 rounded bg-[#FFFFFF]"
             >
               <div className="flex flex-col items-center gap-10 ">
                 <Image
@@ -65,7 +64,7 @@ const MobileNavbar = () => {
                   height={25}
                   onClick={toggleOpen}
                   src="/assets/close.svg"
-                  className="mt-8 flex self-end mr-6 sm:mr-[55px] md:mr-[65px] "
+                  className="mt-2 flex self-end mr-6 sm:mr-[55px] md:mr-[65px] "
                 />
                 <div className="flex flex-col gap-5 text-center text-sm font-semibold text-[#27272A]">
                   {[
@@ -92,16 +91,16 @@ const MobileNavbar = () => {
         <button
           className={`${
             ONIsNavigated
-              ? "relative bg-[#717171] rounded-full w-[56px] h-9 border-[2px] flex items-center justify-center"
-              : "relative bg-black rounded-full w-[56px] h-9 border-[2px] flex items-center justify-center "
+              ? "relative bg-[#717171] rounded-full w-[56px] h-8 border-[1px] flex items-center justify-center"
+              : "relative bg-black rounded-full w-[56px] h-8 border-[1px] flex items-center justify-center "
           }`}
         >
           <div
             onClick={handleONNavigation}
             className={`${
               ONIsNavigated
-                ? "w-[15px] ml-[3px] bg-white text-white rounded-full px-[13px] py-[2px] absolute left-0 z-20"
-                : "w-[15px] ml-[3px] bg-[#222222]  text-[#222222] rounded-full px-[13px] py-[2px] absolute left-0"
+                ? "w-[15px] ml-[3px] bg-white text-white rounded-full px-[13px] py-[1px] absolute left-0 z-20"
+                : "w-[15px] ml-[3px] bg-[#222222]  text-[#222222] rounded-full px-[13px] py-[1px] absolute left-0"
             }`}
           >
             X
@@ -110,11 +109,11 @@ const MobileNavbar = () => {
             onClick={handleOFFNavigation}
             className={`${
               ONIsNavigated
-                ? "w-[15px] mr-[3px] bg-[#717171]  text-[#717171] rounded-full px-[13px] py-[2px] absolute right-0 "
-                : "w-[15px] mr-[3px] bg-white text-[#717171] rounded-full px-[14px] absolute right-0 z-20"
+                ? "w-[15px] mr-[3px] bg-[#717171]  text-[#717171] rounded-full px-[12px] py-[px] absolute right-0 "
+                : "w-[15px] mr-[3px] bg-white text-[#717171] rounded-full px-[13px] absolute right-0 z-20"
             }`}
           >
-            <div className="relative -left-4 px-[10px] py-[8px] ">
+            <div className="relative -left-4 px-[10px] py-[7px] ">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 32 32"
