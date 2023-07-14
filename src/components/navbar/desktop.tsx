@@ -33,10 +33,10 @@ const DesktopNavbar = () => {
         <div className="px-3 flex text-sm font-semibold rounded-full border-[1px] border-[#e5e7eb] shadow-md shadow-[#0000000d] hover:shadow-[#00000014]">
           {[
             { id: 1, link: "/about", text: "About" },
-            { id: 2, link: "", text: "Articles" },
-            { id: 3, link: "", text: "Projects" },
-            { id: 4, link: "", text: "Speaking" },
-            { id: 5, link: "", text: "Uses" },
+            { id: 2, link: "/articles", text: "Articles" },
+            { id: 3, link: "/projects", text: "Projects" },
+            { id: 4, link: "/speakings", text: "Speaking" },
+            { id: 5, link: "/uses", text: "Uses" },
           ].map((i) => (
             <Link
               key={i.id}
