@@ -29,7 +29,8 @@ const Projects = () => {
             rounded: "rounded-full",
             logoSrc: "/assets/profile.jpeg",
             projectTitle: "Ayodele Alayemi - Portfolio",
-            projectDescription: "Personal profile and portfolio",
+            projectDescription:
+              "I’m Ayodele, a software designer based in Lagos, Nigeria. I design, develop, and deploy web applications. I’m aspiring to be a fullstack developer. I’m a music instructor and loves to play the violin.",
             projectLink: "https://ayodele-alayemi-portfolio.vercel.app/",
           },
           {
@@ -51,15 +52,19 @@ const Projects = () => {
           {
             id: 4,
             logoSrc: "/assets/bals-logo.svg",
+
             projectTitle: "BALS University",
-            projectDescription: "E-Commerce website.",
+            projectDescription:
+              "BALS University is an all-encompassing e-learning platform geared towards your growth and success in the digital space with simplified and comprehensible lessons. It is specially made for you and Africans who want to rule the digital space with practical knowledge",
             projectLink: "https://bals-university.vercel.app/",
           },
           {
             id: 5,
             logoSrc: "/assets/bds-logo.svg",
-            projectTitle: "Boundless Digital Service",
-            projectDescription: "SAAS Website",
+            left: "-left-9",
+            projectTitle: "Boundless Digital Services (BDS)",
+            projectDescription:
+              "Services rendered on BDS ranges from content strategy to drafting marketing campaigns , pre-qualified Advertising campaigns, community management and warmup, email marketing, ghost writing, social media funnel setup, search engine and social media branding.",
             projectLink: "https://boundless-digital-services.vercel.app/",
           },
           {
@@ -67,7 +72,7 @@ const Projects = () => {
             logoSrc: "/assets/hernalytics-logo.svg",
             projectTitle: "Nigeria Election Result (Sample)",
             projectDescription:
-              "An election result website displaying the candidates contesting for a positon and the candidate with the highest number of votes in each state.   ",
+              "An election result website displaying the candidates contesting for the presidential position and the candidate with the highest number of votes in each state.",
             projectLink:
               "https://ayodele-alayemi-post-election-data.vercel.app/",
           },
@@ -78,11 +83,11 @@ const Projects = () => {
           >
             <div className="h-[50px] flex items-center justify-start">
               <Image
-                src={i.logoSrc}
-                alt="project logo"
                 width={48}
                 height={48}
-                className={`w-[auto] h-[auto] ${i.rounded}`}
+                src={i.logoSrc}
+                alt="project logo"
+                className={`relative w-[auto] h-[auto] ${i.rounded} ${i.left} `}
               />
             </div>
             <div className="h-auto sm:h-[220px]">
@@ -95,9 +100,24 @@ const Projects = () => {
             <a
               href={i.projectLink}
               target="_blank"
-              className="w-[70px] py-1 mt-2 italic hover:text-teal-500 "
+              className="flex items-center gap-[2px] w-[90px] py-1 mt-2 text-sm font-medium text-[#14B8A6]"
             >
               Visit site
+              <span>
+                <svg
+                  fill="none"
+                  aria-hidden="true"
+                  viewBox="0 0 16 16"
+                  className="ml-1 h-4 w-4 stroke-current"
+                >
+                  <path
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M6.75 5.75 9.25 8l-2.5 2.25"
+                  ></path>
+                </svg>
+              </span>
             </a>
           </div>
         ))}

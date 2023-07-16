@@ -20,7 +20,7 @@ const Article = () => {
         more, collected in chronological order.
       </p>
 
-      <div className="w-full lg:w-4/5 xl:w-4/5 flex flex-col py-5 sm:py-6 lg:py-6 xl:py-0 gap-9 sm:gap-12 ">
+      <div className="w-full lg:w-4/5 xl:w-4/5 flex flex-col py-5 sm:py-6 lg:py-6 xl:py-0 gap-7 sm:gap-8 ">
         {[
           {
             id: 1,
@@ -49,13 +49,13 @@ const Article = () => {
         ].map((i) => (
           <div
             key={i.id}
-            className="flex flex-col sm:flex-row items-start gap-6 sm:gap-16 p-1 sm:px-3 md:px-6 lg:px-6 xl:p-6  "
+            className="flex flex-col sm:flex-row items-start gap-6 sm:gap-16 p-1 sm:px-3 md:px-6 lg:px-6 xl:p-6"
           >
-            <p className="w-auto  sm:w-[500px] border-l-[1px] border-zinc-400 text-zinc-400 text-sm leading-6 pl-[20px]  ">
+            <p className="mt-6 w-auto sm:w-[500px] border-l-[1px] border-zinc-400 text-zinc-400 text-sm leading-6 pl-[20px]  ">
               {i.date}
             </p>
 
-            <div className="flex flex-col gap-[16px] ">
+            <div className="flex flex-col py-6 px-6 gap-[16px] hover:bg-zinc-50 hover:rounded-3xl">
               <p className="text-zinc-800 font-semibold text-base    ">
                 {i.title}
               </p>

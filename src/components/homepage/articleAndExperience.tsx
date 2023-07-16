@@ -1,10 +1,11 @@
 import React from "react";
 import Link from "next/link";
+import Image from "next/image";
 
 const ArticleAndExperience = () => {
   return (
     <section className="flex flex-col lg:flex-row items-center justify-between tap-transparent">
-      <div className="w-full lg:w-1/2 flex flex-col py-5 sm:py-6 lg:py-6 xl:py-0 gap-9 sm:gap-12 ">
+      <div className="w-full lg:w-1/2 flex flex-col py-5 sm:py-6 lg:py-6 xl:py-0 gap-9 sm:gap-12">
         {[
           {
             id: 1,
@@ -33,7 +34,7 @@ const ArticleAndExperience = () => {
         ].map((i) => (
           <div
             key={i.id}
-            className="flex flex-col items-start gap-[12px] p-1 sm:px-3 md:px-16 lg:px-2 xl:p-6  "
+            className="flex flex-col items-start gap-[12px] p-1 sm:px-3 md:px-16 lg:px-2 xl:p-6 hover:bg-zinc-50 hover:rounded-3xl"
           >
             <p className="border-l-[1px] border-zinc-400 text-zinc-400 text-sm leading-6 pl-[14px]  ">
               {i.date}
@@ -98,9 +99,9 @@ const ArticleAndExperience = () => {
           <div className="flex gap-5">
             <input
               placeholder="Email Address"
-              className="w-full text-sm border-[1px] border-[#ede7e5] py-2 px-2 rounded-lg  shadow-sm shadow-gray-600"
+              className="w-full text-sm border-[1px] border-[#ede7e5] py-2 px-3 rounded-lg shadow-sm shadow-gray-600"
             />
-            <button className="p-3 bg-black text-white text-sm rounded-xl   ">
+            <button className="p-3 bg-black font-semibold text-white text-sm rounded-xl   ">
               Join
             </button>
           </div>
@@ -134,28 +135,28 @@ const ArticleAndExperience = () => {
           {[
             {
               id: 1,
-              organisationLogo: "/assets/davtechinvest-logo.png",
-              organisation: "DAVTECHINVEST",
-              position: "Front-end Developer",
-              startYear: "2022",
-              endYear: "Present",
-            },
-            {
-              id: 2,
-              organisationLogo: "/assets/bals-logo.svg",
-              organisation: "BALS University / BDS",
-              position: "Front-end Developer",
-              startYear: "2022",
-              endYear: "2022",
-            },
-            {
-              id: 3,
               rounded: "rounded-full",
               organisationLogo: "/assets/profile.jpeg",
               organisation: "Contract Front-end Developer",
               position: "Front-end Developer",
-              startYear: "2022",
+              startYear: "2023",
               endYear: "Present",
+            },
+            {
+              id: 2,
+              organisationLogo: "/assets/davtechinvest-logo.png",
+              organisation: "DAVTECHINVEST",
+              position: "Front-end Developer",
+              startYear: "2023",
+              endYear: "",
+            },
+            {
+              id: 3,
+              organisationLogo: "/assets/bals-logo.svg",
+              organisation: "BALS University / BDS",
+              position: "Front-end Developer",
+              startYear: "2023",
+              endYear: "",
             },
             {
               id: 4,
@@ -165,23 +166,17 @@ const ArticleAndExperience = () => {
               startYear: "2020",
               endYear: "2022",
             },
-            // {
-            //   id: 4,
-            //   organisationLogo: "/assets/solar-shop-logo.jpeg",
-            //   organisation: "The Solar Shop Limited",
-            //   position: "Admin Operation",
-            //   startYear: "2020",
-            //   endYear: "2022",
-            // },
           ].map((i) => (
             <div
               key={i.id}
               className="flex w-full items-center gap-4 lg:gap-3 2xl:gap-6  h-[48px]"
             >
               <div className="w-[50px] h-[48px] flex items-center justify-center rounded-3xl ">
-                <img
-                  src={i.organisationLogo}
+                <Image
+                  width={35}
                   alt="logo"
+                  height={35}
+                  src={i.organisationLogo}
                   className={`w-[35px] h-[35px] ${i.rounded}`}
                 />
               </div>
@@ -201,7 +196,7 @@ const ArticleAndExperience = () => {
             </div>
           ))}
 
-          <button className=" w-full flex items-center justify-center mt-3 py-3 bg-[#FAFAFA] text-[#18181B] text-sm font-semibold rounded-md">
+          <button className=" w-full flex items-center justify-center mt-3 py-3 bg-[#FAFAFA] hover:bg-[#ece7e7] text-[#18181B] text-sm font-semibold rounded-md">
             Download CV{" "}
             <span className="ml-3">
               <svg

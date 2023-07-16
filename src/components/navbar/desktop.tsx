@@ -41,8 +41,7 @@ const DesktopNavbar = () => {
             { id: 1, link: "/about", text: "About" },
             { id: 2, link: "/articles", text: "Articles" },
             { id: 3, link: "/projects", text: "Projects" },
-            { id: 4, link: "/speakings", text: "Speaking" },
-            { id: 5, link: "/uses", text: "Uses" },
+            { id: 4, link: "/uses", text: "Uses" },
           ].map((i) => (
             <Link
               key={i.id}
