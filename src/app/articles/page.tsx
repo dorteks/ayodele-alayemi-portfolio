@@ -28,7 +28,6 @@ const Article = () => {
             title: "HTML & CSS: The ABC of Front-End Development",
             introduction:
               "HTML and CSS are considered the ABC of front-end development. They are fundamental technologies used to create and style web pages. HTML (Hypertext Markup Language) provides the structure and content of a web page, while CSS (Cascading Style Sheets) is used for styling and layout",
-            href: "",
           },
           {
             id: 2,
@@ -36,7 +35,6 @@ const Article = () => {
             title: "HTML & CSS: The ABC of Front-End Development",
             introduction:
               "HTML and CSS are considered the ABC of front-end development. They are fundamental technologies used to create and style web pages. HTML (Hypertext Markup Language) provides the structure and content of a web page, while CSS (Cascading Style Sheets) is used for styling and layout",
-            href: "",
           },
           {
             id: 3,
@@ -44,7 +42,6 @@ const Article = () => {
             title: "HTML & CSS: The ABC of Front-End Development",
             introduction:
               "HTML and CSS are considered the ABC of front-end development. They are fundamental technologies used to create and style web pages. HTML (Hypertext Markup Language) provides the structure and content of a web page, while CSS (Cascading Style Sheets) is used for styling and layout",
-            href: "",
           },
         ].map((i) => (
           <div
@@ -55,34 +52,35 @@ const Article = () => {
               {i.date}
             </p>
 
-            <div className="flex flex-col py-6 px-6 gap-[16px] hover:bg-zinc-50 hover:rounded-3xl">
+            <Link
+              href={`/articles/${i.title}`}
+              className="flex flex-col py-6 px-6 gap-[16px] hover:bg-zinc-50 hover:rounded-3xl"
+            >
               <p className="text-zinc-800 font-semibold text-base    ">
                 {i.title}
               </p>
               <p className="text-zinc-600 text-sm leading-6 ">
                 {i.introduction}
               </p>
-              <Link href={i.href}>
-                <p className="flex gap-2 items-center justify-start text-teal-500 font-medium text-sm leading-6">
-                  Read article
-                  <span>
-                    <svg
-                      fill="none"
-                      aria-hidden="true"
-                      viewBox="0 0 16 16"
-                      className="ml-1 h-4 w-4 stroke-current"
-                    >
-                      <path
-                        stroke-width="1.5"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        d="M6.75 5.75 9.25 8l-2.5 2.25"
-                      ></path>
-                    </svg>
-                  </span>
-                </p>
-              </Link>
-            </div>
+              <p className="flex gap-2 items-center justify-start text-teal-500 font-medium text-sm leading-6">
+                Read article
+                <span>
+                  <svg
+                    fill="none"
+                    aria-hidden="true"
+                    viewBox="0 0 16 16"
+                    className="ml-1 h-4 w-4 stroke-current"
+                  >
+                    <path
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M6.75 5.75 9.25 8l-2.5 2.25"
+                    ></path>
+                  </svg>
+                </span>
+              </p>
+            </Link>
           </div>
         ))}
       </div>

@@ -14,7 +14,7 @@ export const metadata: Metadata = {
 const Uses = () => {
   return (
     <div className="px-4 sm:px-0 tap-transparent">
-      <h1 className="text-2xl sm:text-4xl md:text-5xl text-[#27272A] font-semibold max-w-[670px]  ">
+      <h1 className="text-2xl sm:text-4xl md:text-5xl md:leading-[58px] text-[#27272A] font-semibold max-w-[670px]  ">
         Technologies I use, gadjets I love, musical instruments I play, my
         hobbies and other things I recommend
       </h1>
