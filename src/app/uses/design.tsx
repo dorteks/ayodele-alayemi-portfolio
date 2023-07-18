@@ -4,7 +4,7 @@ const Design = () => {
   return (
     <div className="w-full lg:w-4/5 xl:w-4/5 flex flex-col py-5 sm:py-6 lg:py-6 xl:py-0 gap-7 sm:gap-8 ">
       <div className="flex flex-col md:flex-row items-start gap-6 md:gap-20 p-1 sm:px-3 md:px-6 lg:px-6 xl:p-6">
-        <p className="w-auto md:border-l-[1px] md:border-zinc-400 text-sm font-bold leading-6 md:pl-[20px]  ">
+        <p className="w-auto md:border-l-[1px] md:border-zinc-400 text-sm font-bold leading-6 md:pl-[20px]">
           Design
         </p>
 
