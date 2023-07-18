@@ -7,7 +7,7 @@ const Footer = () => {
         <div className="flex gap-x-6 text-sm font-medium leading-6 text-[#27272A] ">
           <a href="/about">About</a>
           <a href="/projects">Projects </a>
-          <a href="">Uses</a>
+          <a href="/uses">Uses</a>
         </div>
         <div className="text-sm leading-6 text-[#A1A1AA]    ">
           &copy; 2023 Ayodele Alayemi, All rights reserved.
