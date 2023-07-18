@@ -32,13 +32,17 @@ const ArticleAndExperience = () => {
           <Link
             key={i.id}
             href={`/articles/${i.title}`}
-            className="flex flex-col items-start gap-[12px] px-2 sm:py-8 sm:px-3 md:px-16 bg-red-500 lg:px-3 xl:p-6 hover:bg-zinc-50 hover:rounded-3xl"
+            className="flex flex-col items-start gap-[12px] px-2 py-8 sm:px-3 md:px-16 lg:px-3 xl:p-6 hover:bg-zinc-50 hover:rounded-3xl"
           >
-            <p className="border-l-[1px] border-zinc-400 text-zinc-400 text-sm leading-6 pl-[14px]">
+            <p className="w-[120px] border-l-[1px] border-zinc-400 text-zinc-400 text-sm leading-6 pl-[14px]">
               {i.date}
             </p>
-            <p className=" text-zinc-800 font-semibold text-base">{i.title}</p>
-            <p className="text-zinc-600 text-sm leading-6 ">{i.introduction}</p>
+            <p className="max-w-[636px] text-zinc-800 font-semibold text-base">
+              {i.title}
+            </p>
+            <p className=" text-zinc-600 text-sm leading-6 ">
+              {i.introduction}
+            </p>
             <p className="flex gap-2 items-center justify-center text-teal-500 font-medium text-sm leading-6">
               Read article
               <span>
