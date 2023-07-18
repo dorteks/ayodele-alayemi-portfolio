@@ -30,14 +30,14 @@ const ArticleAndExperience = () => {
           },
         ].map((i) => (
           <Link
-            href={`/articles/${i.title}`}
             key={i.id}
-            className="flex flex-col items-start gap-[12px] p-1 sm:px-3 md:px-16 lg:px-2 xl:p-6 hover:bg-zinc-50 hover:rounded-3xl"
+            href={`/articles/${i.title}`}
+            className="flex flex-col items-start gap-[12px] px-2 sm:py-8 sm:px-3 md:px-16 lg:px-3 xl:p-6 hover:bg-zinc-50 hover:rounded-3xl"
           >
-            <p className="border-l-[1px] border-zinc-400 text-zinc-400 text-sm leading-6 pl-[14px]  ">
+            <p className="w-auto border-l-[1px] border-zinc-400 text-zinc-400 text-sm leading-6 pl-[14px]">
               {i.date}
             </p>
-            <p className="text-zinc-800 font-semibold text-base    ">
+            <p className="w-auto text-zinc-800 font-semibold text-base">
               {i.title}
             </p>
             <p className="text-zinc-600 text-sm leading-6 ">{i.introduction}</p>
