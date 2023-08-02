@@ -18,7 +18,7 @@ const Introduction = () => {
         {[
           {
             id: 1,
-            link: "https://linkedin.com/",
+            link: "https://linkedin.com/inayodele-alayemi",
             iconSrc: "/assets/linkedin-blackfill.png",
           },
           {
@@ -28,12 +28,12 @@ const Introduction = () => {
           },
           {
             id: 3,
-            link: "https://github.com/",
+            link: "https://github.com/dorteks",
             iconSrc: "/assets/github-blackfill.png",
           },
           {
             id: 4,
-            link: "https://twitter.com/",
+            link: "https://twitter.com/dotex245",
             iconSrc: "/assets/twitter-blackfill.svg",
           },
         ].map((i) => {
