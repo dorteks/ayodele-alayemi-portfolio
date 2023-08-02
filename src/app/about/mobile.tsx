@@ -63,7 +63,7 @@ const Mobile = () => {
           {[
             {
               id: 1,
-              link: "https://linkedin.com/",
+              link: "https://linkedin.com/inayodele-alayemi",
               iconSrc: "/assets/linkedin-blackfill.png",
               follow: "Follow on Linkedin",
             },
@@ -75,13 +75,13 @@ const Mobile = () => {
             },
             {
               id: 3,
-              link: "https://github.com/",
+              link: "https://github.com/dorteks",
               iconSrc: "/assets/github-blackfill.png",
               follow: "Follow on Github",
             },
             {
               id: 4,
-              link: "https://twitter.com/",
+              link: "https://twitter.com/dotex245",
               iconSrc: "/assets/twitter-blackfill.svg",
               follow: "Follow on Twitter",
             },

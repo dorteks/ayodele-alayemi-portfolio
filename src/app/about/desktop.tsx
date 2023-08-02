@@ -65,7 +65,7 @@ const Desktop = () => {
           {[
             {
               id: 1,
-              link: "https://linkedin.com/",
+              link: "https://linkedin.com/inayodele-alayemi",
               iconSrc: "/assets/linkedin-blackfill.png",
               follow: "Follow on Linkedin",
             },
@@ -77,13 +77,13 @@ const Desktop = () => {
             },
             {
               id: 3,
-              link: "https://github.com/",
+              link: "https://github.com/dorteks",
               iconSrc: "/assets/github-blackfill.png",
               follow: "Follow on Github",
             },
             {
               id: 4,
-              link: "https://twitter.com/",
+              link: "https://twitter.com/dotex245",
               iconSrc: "/assets/twitter-blackfill.svg",
               follow: "Follow on Twitter",
             },
@@ -111,7 +111,8 @@ const Desktop = () => {
 
         <Link
           href=""
-          className="flex flex-row gap-4 pt-8 text-sm text-[#27272A] hover:text-[#14B8A6] font-semibold border-t-[1px] border-[#ebe5e7]   "
+          // className="flex flex-row gap-4 pt-8 text-sm text-[#27272A] hover:text-[#14B8A6] font-semibold border-t-[1px] border-[#ebe5e7]"
+          className="flex flex-row gap-4 pt-8 text-sm text-[#27272A] font-semibold border-t-[1px] border-[#ebe5e7]"
         >
           <svg
             fill="none"
@@ -134,6 +135,25 @@ const Desktop = () => {
 
           <p>ayodelealayemi@gmail.com</p>
         </Link>
+
+        <div className="flex flex-row items-center gap-4 pt-6 text-sm text-[#27272A] font-semibold   ">
+          <Image
+            src="/assets/whatsapp.png"
+            alt="whatsapp"
+            height={24}
+            width={24}
+          />
+          <p>+234 810 252 3205</p>
+        </div>
+
+        <button className="w-[250px] mt-6 flex self-center items-center justify-center py-3 bg-[#FAFAFA] hover:bg-[#ece7e7] text-[#18181B] text-sm font-semibold rounded-md   ">
+          <Link
+            target="_blank"
+            href="https://drive.google.com/file/d/1LfWOJiZOJ5Ay9hghavKHkotg0_et17wW/view"
+          >
+            Link to CV
+          </Link>
+        </button>
       </div>
     </main>
   );

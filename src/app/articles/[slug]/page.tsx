@@ -1,7 +1,7 @@
 import React from "react";
-import { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
+import { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: `Articles -  `,
@@ -35,7 +35,7 @@ const ArticleSlug = () => {
 
         <div className="w-auto lg:w-[700px] xl:w-4/5  flex flex-col py-6">
           <p className="text-zinc-800 font-semibold text-2xl leading-[32px] sm:text-4xl sm:leading-[48px] lg:text-5xl lg:leading-[62px] mt-6">
-            HTML & CSS: The ABC of Front-End Development{" "}
+            HTML & CSS: The ABC of Front-End Development
           </p>
           <p className="text-zinc-600 text-sm sm:text-base leading-6 mt-7">
             Introduction: HTML and CSS are considered the ABC of front-end

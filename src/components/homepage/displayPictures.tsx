@@ -28,25 +28,11 @@ const DisplayPictures = () => {
           className="h-[310px] w-[300px] rounded-2xl bg-inherit rotate-2"
         />
         <Image
-          src="/assets/2020react-next.webp"
+          src="/assets/software-paradigm.png"
           width={300}
           height={330}
           alt="picture display"
-          className="h-[310px] w-[300px] rounded-2xl bg-inherit rotate-3"
-        />
-        <Image
-          src="/assets/frontend-dev.jpg"
-          width={300}
-          height={330}
-          alt="picture display"
-          className="h-[310px] w-[300px] rounded-2xl bg-inherit -rotate-3 "
-        />
-        <Image
-          src="/assets/react-next.png"
-          width={300}
-          height={330}
-          alt="picture display"
-          className="h-[310px] w-[300px] rounded-2xl bg-inherit rotate-2"
+          className="h-[310px] w-[300px] rounded-2xl bg-inherit -rotate-2"
         />
         <Image
           src="/assets/2020react-next.webp"
@@ -68,6 +54,41 @@ const DisplayPictures = () => {
           height={330}
           alt="picture display"
           className="h-[310px] w-[300px] rounded-2xl bg-inherit rotate-2"
+        />
+        <Image
+          src="/assets/software-paradigm.png"
+          width={300}
+          height={330}
+          alt="picture display"
+          className="h-[310px] w-[300px] rounded-2xl bg-inherit -rotate-2"
+        />
+        <Image
+          src="/assets/2020react-next.webp"
+          width={300}
+          height={330}
+          alt="picture display"
+          className="h-[310px] w-[300px] rounded-2xl bg-inherit rotate-3"
+        />
+        <Image
+          src="/assets/frontend-dev.jpg"
+          width={300}
+          height={330}
+          alt="picture display"
+          className="h-[310px] w-[300px] rounded-2xl bg-inherit -rotate-3 "
+        />
+        <Image
+          src="/assets/react-next.png"
+          width={300}
+          height={330}
+          alt="picture display"
+          className="h-[310px] w-[300px] rounded-2xl bg-inherit rotate-2"
+        />
+        <Image
+          src="/assets/software-paradigm.png"
+          width={300}
+          height={330}
+          alt="picture display"
+          className="h-[310px] w-[300px] rounded-2xl bg-inherit -rotate-2"
         />
       </div>
     </Marquee>

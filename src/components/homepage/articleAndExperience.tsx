@@ -186,15 +186,24 @@ const ArticleAndExperience = () => {
                 <div className="flex justify-between text-[13px] text-[#A1A1AA]">
                   <p className="flex self-start">{i.position}</p>
                   <p className="flex self-end">
-                    {i.startYear} -{" "}
-                    <span className="pl-[3px]">{i.endYear}</span>
+                    {i.startYear} -
+                    <span className="pl-[3px]"> {i.endYear}</span>
                   </p>
                 </div>
               </div>
             </div>
           ))}
 
-          <button className=" w-full flex items-center justify-center mt-3 py-3 bg-[#FAFAFA] hover:bg-[#ece7e7] text-[#18181B] text-sm font-semibold rounded-md">
+          <button className="w-full flex self-center items-center justify-center mt-3 py-3 bg-[#FAFAFA] hover:bg-[#ece7e7] text-[#18181B] text-sm font-semibold rounded-md   ">
+            <Link
+              target="_blank"
+              href="https://drive.google.com/file/d/1LfWOJiZOJ5Ay9hghavKHkotg0_et17wW/view"
+            >
+              Link to CV
+            </Link>
+          </button>
+
+          {/* <button className=" w-full flex items-center justify-center mt-3 py-3 bg-[#FAFAFA] hover:bg-[#ece7e7] text-[#18181B] text-sm font-semibold rounded-md">
             Download CV{" "}
             <span className="ml-3">
               <svg
@@ -211,9 +220,9 @@ const ArticleAndExperience = () => {
                 ></path>
               </svg>
             </span>
-          </button>
+          </button> */}
 
-          <p className="text-sm leading-[0px]  text-[#FFFFFF]">
+          <p className="text-sm leading-[0px] text-[#FFFFFF]">
             Get notified when I publish something new, and unsubscribe at any
             time.
           </p>

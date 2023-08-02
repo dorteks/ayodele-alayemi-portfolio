@@ -32,14 +32,14 @@ const Article = () => {
           {
             id: 2,
             date: "July 12, 2023",
-            title: "HTML & CSS: The ABC of Front-End Development",
+            title: "Rudiments of Music",
             introduction:
               "HTML and CSS are considered the ABC of front-end development. They are fundamental technologies used to create and style web pages. HTML (Hypertext Markup Language) provides the structure and content of a web page, while CSS (Cascading Style Sheets) is used for styling and layout",
           },
           {
             id: 3,
             date: "July 12, 2023",
-            title: "HTML & CSS: The ABC of Front-End Development",
+            title: "ReactJs: A Powerful Tool for Web Development",
             introduction:
               "HTML and CSS are considered the ABC of front-end development. They are fundamental technologies used to create and style web pages. HTML (Hypertext Markup Language) provides the structure and content of a web page, while CSS (Cascading Style Sheets) is used for styling and layout",
           },
@@ -53,7 +53,15 @@ const Article = () => {
             </p>
 
             <Link
-              href={`/articles/${i.title}`}
+              href={{
+                pathname: `/articles/${i.title}`,
+                query: {
+                  date: i.date,
+                  title: i.title,
+                  introduction: i.introduction,
+                },
+              }}
+              as={`articles/${i.title.toLocaleLowerCase()}`}
               className="flex flex-col py-6 px-6 gap-[16px] hover:bg-zinc-50 hover:rounded-3xl"
             >
               <p className="text-zinc-800 font-semibold text-base    ">
