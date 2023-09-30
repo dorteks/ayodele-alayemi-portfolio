@@ -54,8 +54,8 @@ const ArticleAndExperience = () => {
                 >
                   <path
                     stroke-width="1.5"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
                     d="M6.75 5.75 9.25 8l-2.5 2.25"
                   ></path>
                 </svg>
@@ -74,8 +74,8 @@ const ArticleAndExperience = () => {
                 stroke-width="1.5"
                 aria-hidden="true"
                 viewBox="0 0 24 24"
-                stroke-linecap="round"
-                stroke-linejoin="round"
+                strokeLinecap="round"
+                strokeLinejoin="round"
                 className="h-6 w-6 flex-none"
               >
                 <path
@@ -113,8 +113,8 @@ const ArticleAndExperience = () => {
                 stroke-width="1.5"
                 aria-hidden="true"
                 viewBox="0 0 24 24"
-                stroke-linecap="round"
-                stroke-linejoin="round"
+                strokeLinecap="round"
+                strokeLinejoin="round"
                 className="h-6 w-6 flex-none"
               >
                 <path
@@ -214,8 +214,8 @@ const ArticleAndExperience = () => {
               >
                 <path
                   stroke-width="1.5"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
                   d="M4.75 8.75 8 12.25m0 0 3.25-3.5M8 12.25v-8.5"
                 ></path>
               </svg>

@@ -20,7 +20,7 @@ const WorkStation = () => {
               id: 2,
               gadget: "Desk and Chair",
               description:
-                "Desk and Chair?, I use anything that has a flat surface: the dining table, the living room's center table, my bed etc. are places where I work at the moment. I find the dining table more comfortable to work with. There is enough space to accommodate my laptop/notebooks, the chair is comfortable and the table is high enought to set my PC at eye level. I plan to get myself a more comfortable work station when I land my first job as a frontend developer.",
+                "At the moment, I use a plastic chair and table. I plan to get myself a more comfortable work station when I land my first job as a frontend developer.",
             },
           ].map((i) => (
             <div key={i.id} className="flex flex-col gap-[16px]">

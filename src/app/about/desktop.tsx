@@ -65,7 +65,7 @@ const Desktop = () => {
           {[
             {
               id: 1,
-              link: "https://linkedin.com/inayodele-alayemi",
+              link: "https://linkedin.com/in/ayodele-alayemi",
               iconSrc: "/assets/linkedin-blackfill.png",
               follow: "Follow on Linkedin",
             },
@@ -116,11 +116,11 @@ const Desktop = () => {
         >
           <svg
             fill="none"
-            stroke-width="1.5"
+            strokeWidth="1.5"
             aria-hidden="true"
             viewBox="0 0 24 24"
-            stroke-linecap="round"
-            stroke-linejoin="round"
+            strokeLinecap="round"
+            strokeLinejoin="round"
             className="h-6 w-6 flex-none"
           >
             <path
