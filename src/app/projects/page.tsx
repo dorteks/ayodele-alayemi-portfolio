@@ -111,9 +111,9 @@ const Projects = () => {
                   className="ml-1 h-4 w-4 stroke-current"
                 >
                   <path
-                    stroke-width="1.5"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
+                    strokeWidth="1.5"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
                     d="M6.75 5.75 9.25 8l-2.5 2.25"
                   ></path>
                 </svg>

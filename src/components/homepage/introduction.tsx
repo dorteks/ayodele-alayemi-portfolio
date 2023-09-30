@@ -18,7 +18,7 @@ const Introduction = () => {
         {[
           {
             id: 1,
-            link: "https://linkedin.com/inayodele-alayemi",
+            link: "https://linkedin.com/in/ayodele-alayemi",
             iconSrc: "/assets/linkedin-blackfill.png",
           },
           {

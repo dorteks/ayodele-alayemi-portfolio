@@ -32,7 +32,7 @@ const DevelopmentTools = () => {
               id: 4,
               gadget: "Testing and Debugging",
               description:
-                "Jest and Postman are popular tools used for testing and debugging JavaScript applications. I use Jest for unit testing JavaScript code for React and Node.js applications while I use postman for testing and debugging APIs.",
+                "Jest, Cypress and Postman are popular tools used for testing and debugging JavaScript applications. I use Jest & Cypress for unit testing JavaScript code for React and Node.js applications while I use postman for testing and debugging APIs.",
             },
             {
               id: 5,
