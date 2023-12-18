@@ -13,7 +13,7 @@ const Article = async () => {
   const comments = await fetchArticles();
 
   return (
-    <div className="px-2 sm:px-0 tap-transparent">
+    <div className="px-2 sm:px-0 tap-transparent h-screen">
       <h1 className="text-3xl sm:text-4xl md:text-5xl text-[#27272A] font-semibold max-w-[670px]  ">
         Writing on software development, rudiments of music and renewable
         energy.
@@ -24,7 +24,7 @@ const Article = async () => {
       </p>
 
       <div className="w-full lg:w-4/5 xl:w-4/5 flex flex-col py-5 sm:py-6 lg:py-6 xl:py-0 gap-7 sm:gap-8 ">
-        {comments.length > 0 &&
+        {/* {comments.length > 0 &&
           comments.map((comment: any) => (
             <Articles
               id={comment.id}
@@ -32,7 +32,8 @@ const Article = async () => {
               name={comment.name}
               email={comment.email}
             />
-          ))}
+          ))} */}
+        This feature is in progress
       </div>
     </div>
   );

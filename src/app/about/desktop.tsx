@@ -149,7 +149,7 @@ const Desktop = () => {
         <button className="w-[250px] mt-6 flex self-center items-center justify-center py-3 bg-[#FAFAFA] hover:bg-[#ece7e7] text-[#18181B] text-sm font-semibold rounded-md   ">
           <Link
             target="_blank"
-            href="https://drive.google.com/file/d/1LfWOJiZOJ5Ay9hghavKHkotg0_et17wW/view"
+            href="https://drive.google.com/file/d/1ILtq19fpZGIsAHzqVQA14jtnL5xjMaqu/view?usp=sharing"
           >
             Link to CV
           </Link>
