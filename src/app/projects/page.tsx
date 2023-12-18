@@ -27,6 +27,15 @@ const Projects = () => {
           {
             id: 1,
             rounded: "rounded-full",
+            logoSrc: "/assets/eyemark.jpeg",
+            projectTitle: "Eyemark",
+            projectDescription:
+              "Eyemark is the easiest way to discover and track government projects anytime, anywhere in Nigeria",
+            projectLink: "https://www.eyemark.ng/",
+          },
+          {
+            id: 2,
+            rounded: "rounded-full",
             logoSrc: "/assets/profile.jpeg",
             projectTitle: "Ayodele Alayemi - Portfolio",
             projectDescription:
@@ -34,7 +43,7 @@ const Projects = () => {
             projectLink: "https://ayodele-alayemi-portfolio.vercel.app/",
           },
           {
-            id: 2,
+            id: 3,
             logoSrc: "/assets/airbnb-logo.png",
             projectTitle: " Airbnb Website Clone",
             projectDescription:
@@ -42,7 +51,7 @@ const Projects = () => {
             projectLink: "https://ayodele-alayemi-airbnb-clone.vercel.app/",
           },
           {
-            id: 3,
+            id: 4,
             logoSrc: "/assets/lendsqr-logo.svg",
             projectTitle: " Lendsqr Fintech Web App",
             projectDescription:
@@ -50,7 +59,7 @@ const Projects = () => {
             projectLink: "https://ayodele-alayemi-fintech-fe.vercel.app/",
           },
           {
-            id: 4,
+            id: 5,
             logoSrc: "/assets/bals-logo.svg",
 
             projectTitle: "BALS University",
@@ -59,7 +68,7 @@ const Projects = () => {
             projectLink: "https://bals-university.vercel.app/",
           },
           {
-            id: 5,
+            id: 6,
             logoSrc: "/assets/bds-logo.svg",
             left: "-left-9",
             projectTitle: "Boundless Digital Services (BDS)",
@@ -68,7 +77,7 @@ const Projects = () => {
             projectLink: "https://boundless-digital-services.vercel.app/",
           },
           {
-            id: 6,
+            id: 7,
             logoSrc: "/assets/hernalytics-logo.svg",
             projectTitle: "Nigeria Election Result (Sample)",
             projectDescription:

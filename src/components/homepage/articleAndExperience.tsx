@@ -134,18 +134,18 @@ const ArticleAndExperience = () => {
             {
               id: 1,
               rounded: "rounded-full",
-              organisationLogo: "/assets/profile.jpeg",
-              organisation: "Contract Front-end Developer",
+              organisationLogo: "/assets/zst-white.jpeg",
+              organisation: "ZST Technologies",
               position: "Front-end Developer",
-              startYear: "2023",
-              endYear: "Present",
+              startYear: "Sept 2023",
+              endYear: "Nov 2023",
             },
             {
               id: 2,
               organisationLogo: "/assets/davtechinvest-logo.png",
               organisation: "DAVTECHINVEST",
               position: "Front-end Developer",
-              startYear: "2023",
+              startYear: "June 2023",
               endYear: "",
             },
             {
@@ -153,16 +153,8 @@ const ArticleAndExperience = () => {
               organisationLogo: "/assets/bals-logo.svg",
               organisation: "BALS University / BDS",
               position: "Front-end Developer",
-              startYear: "2023",
-              endYear: "",
-            },
-            {
-              id: 4,
-              organisationLogo: "/assets/solar-shop-logo.jpeg",
-              organisation: "The Solar Shop Limited",
-              position: "Admin Operation",
-              startYear: "2020",
-              endYear: "2022",
+              startYear: "March 2023",
+              endYear: "July 2023",
             },
           ].map((i) => (
             <div
@@ -197,7 +189,7 @@ const ArticleAndExperience = () => {
           <button className="w-full flex self-center items-center justify-center mt-3 py-3 bg-[#FAFAFA] hover:bg-[#ece7e7] text-[#18181B] text-sm font-semibold rounded-md   ">
             <Link
               target="_blank"
-              href="https://drive.google.com/file/d/1LfWOJiZOJ5Ay9hghavKHkotg0_et17wW/view"
+              href="https://drive.google.com/file/d/1ILtq19fpZGIsAHzqVQA14jtnL5xjMaqu/view?usp=sharing"
             >
               Link to CV
             </Link>
